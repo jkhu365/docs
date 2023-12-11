@@ -5,7 +5,7 @@ module.exports = {
 	description: 'SIM.Express Documnet Center',
 	theme: 'reco',
 	dest: 'dist',
-	//base: '/docs/',
+	base: '/docs/',
 	head: [
         [
             'link', { rel: 'icon', href: '/logo.png' }
