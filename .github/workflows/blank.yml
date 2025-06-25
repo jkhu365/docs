@@ -2,7 +2,7 @@ name: Call API Daily
 
 on:
   schedule:
-    - cron: '0 1 * * *' # 每天 UTC 时间 1 点
+    - cron: '47 8 * * *'  # 每天 UTC 08:47，相当于中国时间 16:47
   workflow_dispatch:     # 可手动触发
 
 jobs:
