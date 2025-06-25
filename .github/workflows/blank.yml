@@ -1,0 +1,14 @@
+name: Call API Daily
+
+on:
+  schedule:
+    - cron: '0 1 * * *' # 每天 UTC 时间 1 点
+  workflow_dispatch:     # 可手动触发
+
+jobs:
+  call-api:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call your API
+        run: |
+          curl -X GET "https://cmp.conekt.ai/api/v1/ng/schedule/initOperatorRel?id=72"
